@@ -1,8 +1,49 @@
-# React + Vite
+# Projeto publicado na Vercel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://lista-tarefas-woad.vercel.app/
 
-Currently, two official plugins are available:
+-- Próximos passos:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplicação de testes unitários e estudar alguns tópicos:
+
+## Hooks:
+
+useSearchParams
+useRef
+useCallback
+useMemo
+useReducer
+
+## Data Fetching
+
+React Query
+SWR
+GraphQL - Não precisa apronfundar
+Apollo Client
+
+## Formulário
+
+React Hook Form & Zod
+
+## Estados Globais
+
+Context API & useReducer
+Zustand & Redux - visão geral
+
+## Testes
+
+Jest/Vitest
+React Testing Library
+Cypress
+
+## React no Servidor
+
+Server Components
+NextJS - framework do React (padrão do mercado)
+SSR, SSG & ISR
+Remix - framework do React
+
+## React 19+
+
+Action
+use()
