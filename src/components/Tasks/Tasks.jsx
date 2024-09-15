@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Icons from "../../shared/icons/icons";
+import Button from "../Button/Button";
 
 function Tasks({ tasks, onTaskCompletedClick, onDeleteTaskClick }) {
   const navigate = useNavigate();
@@ -24,18 +25,12 @@ function Tasks({ tasks, onTaskCompletedClick, onDeleteTaskClick }) {
             >
               {task.title}
             </button>
-            <button
-              className="bg-slate-400 p-2 rounded-md text-white"
-              onClick={() => SeeDetailsClick(task)}
-            >
+            <Button onClick={() => SeeDetailsClick(task)}>
               <Icons.SetaDireita />
-            </button>
-            <button
-              className="bg-slate-400 p-2 rounded-md text-white"
-              onClick={() => onDeleteTaskClick(task.id)}
-            >
+            </Button>
+            <Button onClick={() => onDeleteTaskClick(task.id)}>
               <Icons.Lixeira />
-            </button>
+            </Button>
           </li>
         ))}
       </ul>

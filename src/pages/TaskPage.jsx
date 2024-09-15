@@ -1,5 +1,6 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Icons from "../shared/icons/icons";
+import Title from "../components/Title/Title";
 
 function TaskPage() {
   //hook do router dom para buscar parâmetros na URl.
@@ -9,7 +10,7 @@ function TaskPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen w-screen bg-slate-500 p-6">
+    <div className="h-screen w-screen bg-slate-500 p-6 flex justify-center">
       <div className="w-[500px] space-y-4">
         <div className="flex items-center  justify-center relative">
           <button
@@ -18,9 +19,7 @@ function TaskPage() {
           >
             <Icons.SetaEsquerda />
           </button>
-          <h1 className="text-3xl text-slate-100 font-bold text-center">
-            Detalhes da Tarefa
-          </h1>
+          <Title>Detalhes da Tarefa</Title>
         </div>
         <div className="bg-slate-200 p-4 rounded-md">
           <h1 className="text-xl font-bold text-slate-600">{title}</h1>
